@@ -6,17 +6,12 @@ import tkinter.messagebox
 from turtle import width
 import pymysql
 
+from bibliotheque import Bibliotheque
 
-class ConnectorDB:
-    def __init__(self,root) -> None:
-        self.root = root
-        titleSpace = " "
-        self.root.title(102 * titleSpace + "Gestion Bibliotheque")
-        self.root.geometry("776x700+300+0")
-        self.root.resizable(width = False, height = False)
+
 
 
 if __name__ == "__main__":
     root = Tk()
-    application =  ConnectorDB
+    application =  Bibliotheque(root)
     root.mainloop()      
